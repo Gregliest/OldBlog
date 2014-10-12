@@ -1,0 +1,23 @@
+# Site navigation links
+
+- title: iOS & Android
+  url: /mobile/
+  excerpt:
+  image:
+
+- title: Kayaking
+  url: /kayaking/
+  excerpt:
+  image:
+
+- title: Photography
+  url: /photography/
+  excerpt:
+  image:
+
+- title: About
+  url: /about/
+  excerpt:
+  image:
+
+
