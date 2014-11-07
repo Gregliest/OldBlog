@@ -13,4 +13,4 @@ ads: false
 date: 2014-10-12T23:12:42-07:00
 ---
 
-This image is one of the first macro photos I took, way back in June 2010.  I had just bought a spanking new 85mm macro lens, and was trying it out in Yosemite National Park, near Hetch Hetchy reservoir.  I got super lucky, the bug, the flower, and the focus all came together for this image.  
+This image is one of my very first macro photos, from way back in June 2010.  I had just bought a spanking new 85mm macro lens, and was trying it out in Yosemite National Park, near Hetch Hetchy reservoir.  I got super lucky, the bug, the flower, and the focus all came together for this image, and I've been hooked on macro photography ever since.  
