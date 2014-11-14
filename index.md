@@ -3,7 +3,7 @@ layout: archive
 permalink: /
 title: "Latest Posts"
 image:
-  feature: test.jpg
+  feature: /photography/capitol-reef-tree.jpg
 ---
 
 <div class="tiles">
