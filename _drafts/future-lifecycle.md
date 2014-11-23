@@ -12,6 +12,8 @@ For instance, it exposes the multiple entry points and multiple outcomes of the 
 For instance, the onPause hook can be called for a number of reasons: the app has been backgrounded, the user has closed the app, another view has appeared, etc.  Sometimes, this method can be followed by a call to onDestroy, but that's not necessarily the case.  Sometimes, the app might have to save itself, signaled by another hook, onSaveInstanceState.  But onSaveInstanceState is not guaranteed to be called, for instance if the user "intentionally exits the view," whatever that means.  The developer must be aware of these different cases when deciding what to put in what hook.  
 
  Android envisioned view controllers that are active on screen, paused while something else is in the foreground, stopped, such as if the app is backgrounded, or destroyed such that it has to be recreated from scratch.  To reflect these states, they provided hooks like onPause and onStop.  These hooks define a set of states that a view controller can exist in with multiple entry points, which is fundamentally different than the linear approach favored by Apple.  
+ 
+The complexity on Android continues: Android controllers can have a number of intermediate states, and there are multiple ways to enter and exit those states, which further complicates Android's life cycle handling.  Android's documentation has a number of bullet points outlining different situations where `onStart` can be called, because there are so many possibilities.  For instance, `onStart` can be called when creating a new activity, after a phone call has interrupted the app, or when the user navigates back to the app from another app.  In iOS, the developer doesn't have to worry about any of these scenarios, only whether a view is appearing or disappearing.  Also, there are a number of situations where certain hooks are not guaranteed to be called in Android.  For instance, an activity can go directly from `onCreate` to `onDestroy`.  Furthermore, `onDestroy` is not guaranteed to be called, so it seems kind of pointless to put code there.  When deciding what code to put in which hook, the developer needs to be aware of these different situations to make an informed decision.  It's extremely complicated, and requires a significant amount of study and attention to get right. 
 
 **Memory**
 
@@ -35,6 +37,11 @@ In fact, there are many ways to create NullPointerExceptions with Android Activi
 
 [Insert app backgrounding example]
 
+2. Listeners can fire in a random order.
+4. Supposedly, Fragments require an empty public constructor, which is annoying and not well documented.  
+5. There is no clear documentation on when other setup methods are called, like onPrepareOptionsMenu.  I ended up having to experiment to figure out the order, and I’m not convinced that it's deterministic.
+7. OnClickListeners and other listeners will cause crashes if called in quick succession or after the activity is destroyed.
+
 **Other**
 
 The optimizations that Android made to reclaim memory and CPU from backgrounded views leak out into the realm of the developer, causing numerous crashes and introducing significant complexity. 
@@ -42,3 +49,4 @@ The optimizations that Android made to reclaim memory and CPU from backgrounded 
 I’ll also note that there are a number of other hooks that can be used on each platform, but their use is discouraged.  One example is Android’s OnGlobalLayoutListener which can be used to manipulate the view after the view has been laid out.  However, since Android views should be responsive, manual measurement usually isn’t necessary and this method should be used sparingly.  Also, on iOS, there is often a strong temptation to use viewDidAppear.  If you manipulate the view after the view is on screen, you'll often see weird flashes and resizing views in your app.  Unless you know what you are doing, modify views in viewWillAppear.  It's fine to do background operations that don't affect the view in viewDidAppear.
 
 As you can see, for the most part in iOS, the developer doesn't need to worry about what is happening to the view controller.  The developer is only responsible for performing the necessary actions to show the view on screen, and the system handles the complexity around saved states, foregrounding, backgrounding.  On the other hand, because Android developers must take action according to the state of the view controller, they assume responsibility for the complexity and the edge cases associated with the tasks of the view controller.  This responsibility leaks system level concerns into view controller code, and represents a massive increase in the complexity and responsibilities of the app code.  From personal experience, eight months into the development of my first Android app, I was still encountering issues, edge cases, and crashes pertaining to lifecycle.  I was still having to refer to lifecycle documentation, and it seemed like every week I was discovering a new hook.  On the other hand, I coded in iOS for months without appreciating what was being handled for me in the background.  It just worked. 
+

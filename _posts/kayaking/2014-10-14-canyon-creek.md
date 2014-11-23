@@ -60,7 +60,7 @@ I knew I didn't have time to turn around, so I thought, "well, I guess I've gott
 	<img src="{{ site.url }}/images/kayaking/CC/backwards-bottom.jpg">
 </figure>
 
-There was one more large but straightforward slide, and then it was on to the drops that people normally walk up to from Faucherie lake.  These drops are really fun.  The first one consists of a ten foot lead in drop to a fast ramp to a 20 foot waterfall.  The waterfall has a shelf on the right, so you really want to be left.  Here's a picture of the R2 on I believe a first raft descent of the waterfall.
+There was one more large but straightforward slide, and then it was on to the drops that are easily accessible from Faucherie lake.  These drops are really fun.  The first one consists of a ten foot lead in drop to a fast ramp to a 20 foot waterfall.  The waterfall has a shelf on the right, so you really want to be left.  Here's a picture of the R2 on I believe a first raft descent of the waterfall.
 
 <figure>
 	<img src="{{ site.url }}/images/kayaking/CC/hobbs1.jpg">
