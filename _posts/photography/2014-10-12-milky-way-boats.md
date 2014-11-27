@@ -10,7 +10,7 @@ image:
   teaser: /photography/milky-way-boats.jpg
   thumb: /photography/milky-way-boats.jpg
 ads: false
-date: 2014-10-12T23:29:04-07:00
+date: 2014-10-25T23:29:04-07:00
 ---
 
 Tomales Bay, CA.  

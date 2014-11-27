@@ -16,7 +16,7 @@ date: 2014-11-23T08:31:09-07:00
 
 MVC refresher
   
-To establish terminology, here's a quick description of Model-View-Controller [insert link], the design paradigm favored by both platforms.   MVC seeks to reduce the complexity of user interfaces by separating concerns into models, views, and controllers.  Models hold the data, and views are the representation of the data on screen.  Controllers manage the views and their life cycle, and coordinate with models and the rest of the app.  Since controllers are in the middle of everything, they are usually significantly more complicated than views. 
+To establish terminology, I'll quickly discuss [Model-View-Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), the design paradigm favored by both platforms.   MVC seeks to reduce the complexity of user interfaces by separating concerns into models, views, and controllers.  Models hold the data, and views are the representation of the data on screen.  Controllers manage the views and their life cycle, and coordinate with models and the rest of the app.  Since controllers are in the middle of everything, they are usually significantly more complicated than views. 
 
 The View Life Cycle
 
