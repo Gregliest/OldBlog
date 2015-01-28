@@ -13,11 +13,11 @@ image:
 date: 2014-11-14T17:01:45-08:00
 ---
 
-Layouts are easier to manage in Android than in iOS.  In general, iOS's constraint system is too low level, and does not abstract away the complexity around laying out and managing a view.  Developers can quickly find themselves mired in a web of constraints, and the resulting views are difficult and tedious to change.  On the other hand, Android's Linear Layout provides a useful abstraction that hides much of the complexity around simple layouts.  Furthermore, Android's readable xml layout files greatly simplify view hierarchies by allowing developers to create organized, reusable, and flexible layouts.
+In this series of blog posts, I'm going to discuss the handling of basic layouts in iOS and Android.  I will show that basic tasks are easier in Android because the platform provides useful layout abstractions that encapsulate and hide much of the complexity.  Also, by providing readable xml layout files Android allows developers to create organized, reusable, and flexible layouts. On the other hand, iOS's constraint system is too low level, and so developers can quickly find themselves mired in a web of constraints.  The resulting views are difficult and tedious to change, and do not offer the same power and flexibility as Android layouts.  
 
 The Basic Layout
 
-Let’s build a new view with a text field, an image, and a button, one after another.  In Android, all I have to do is make a Linear Layout, insert the three items in the order I want them to appear, and voila!  
+Let’s build a simple view with a text field, an image, and a button, one after another.  In Android, all I have to do is make a Linear Layout, insert the three items in the order I want them to appear, and voila!  
 
 {% highlight css %}
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
