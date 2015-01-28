@@ -13,7 +13,7 @@ image:
 date: 2014-11-14T17:01:45-08:00
 ---
 
-In this series of blog posts, I'm going to discuss the handling of basic layouts in iOS and Android.  I will show that basic tasks are easier in Android because the platform provides useful layout abstractions that encapsulate and hide much of the complexity.  Also, by providing readable xml layout files Android allows developers to create organized, reusable, and flexible layouts. On the other hand, iOS's constraint system is too low level, and so developers can quickly find themselves mired in a web of constraints.  The resulting views are difficult and tedious to change, and do not offer the same power and flexibility as Android layouts.  
+In this series of blog posts, I'm going to discuss the view layout systems in iOS and Android.  I will show that basic tasks are easier in Android because the platform provides useful layout abstractions that encapsulate and hide much of the complexity around defining a view.  Also, by providing readable xml layout files, Android allows developers to create organized, reusable, and flexible layouts. On the other hand, iOS's constraint system is too low level, and so developers can quickly find themselves mired in a web of constraints.  The resulting views are difficult and tedious to change, and do not offer the same power and flexibility as Android layouts.  
 
 The Basic Layout
 
