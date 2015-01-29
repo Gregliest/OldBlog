@@ -3,6 +3,7 @@ layout: media
 title: "Milky Way Boats"
 modified:
 categories: photography
+comments: true
 excerpt:
 tags: []
 image:

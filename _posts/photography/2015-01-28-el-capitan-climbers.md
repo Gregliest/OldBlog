@@ -3,6 +3,7 @@ layout: article
 title: "El Capitan Climbers"
 modified:
 categories: photography
+comments: true
 excerpt:
 tags: []
 image:

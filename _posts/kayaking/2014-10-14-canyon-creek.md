@@ -3,6 +3,7 @@ layout: article
 title: "Canyon Creek"
 modified:
 categories: kayaking
+comments: true
 excerpt: California creeking at its (sort of) finest. 
 tags: []
 image:

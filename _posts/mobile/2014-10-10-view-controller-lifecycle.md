@@ -3,6 +3,7 @@ layout: article
 title: "iOS > Android: View Life Cycle"
 modified:
 categories: mobile
+comments: true
 excerpt: A comparison of the view and controller life cycle hooks in iOS and Android.
 tags: [android, iOS, mobile, view controllers]
 image:

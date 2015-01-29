@@ -3,6 +3,7 @@ layout: article
 title: "Layouts Part III: The Beauty of Layout Weight and Conclusion"
 modified:
 categories: mobile
+comments: true
 excerpt: A discussion of Android's layout weight and the fantastic abstraction it represents.  There is no equivalent on iOS.  
 tags: []
 image:

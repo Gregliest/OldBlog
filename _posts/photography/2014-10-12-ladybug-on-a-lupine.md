@@ -3,6 +3,7 @@ layout: media
 title: "Ladybug on a Lupine"
 modified:
 categories: photography
+comments: true
 excerpt:
 tags: []
 image: 

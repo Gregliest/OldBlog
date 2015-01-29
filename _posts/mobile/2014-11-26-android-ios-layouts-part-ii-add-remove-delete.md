@@ -3,6 +3,7 @@ layout: article
 title: "Layouts Part II: Add/Remove/Collapse"
 modified:
 categories: mobile
+comments: true
 excerpt: A comparison of the ease of adding, removing, and collapsing views in an Android Linear Layout vs. an iOS Interface Builder view.  
 tags: []
 image:

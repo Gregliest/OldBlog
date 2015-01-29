@@ -3,6 +3,7 @@ layout: media
 title: "Capitol Reef Giant"
 modified:
 categories: photography
+comments: true
 excerpt:
 tags: []
 image:
